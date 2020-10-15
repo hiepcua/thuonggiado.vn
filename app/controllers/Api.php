@@ -1,12 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-require(APPPATH.'/libraries/REST_Controller.php');
-class Api extends REST_Controller
+class Api extends CI_Controller
 {
-	public function __construct() {die("expression");
+	public function __construct() {
 		parent::__construct();
-		$this->load->model('User_model');
-		
+		$this->load->model('Product_model');
 	}
 
 	public function user_get(){

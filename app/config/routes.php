@@ -6,6 +6,9 @@ $route['default_controller']   = 'main';
 $route['404_override']         = 'notify/error_404';
 $route['translate_uri_dashes'] = true;
 
+// Api routes
+$route['api']                   = 'api';
+
 // Shop routes
 $route['shop']                   = 'main';
 $route['shop/search']            = 'shop/shop/search';
