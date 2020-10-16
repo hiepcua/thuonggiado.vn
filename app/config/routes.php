@@ -6,8 +6,6 @@ $route['default_controller']   = 'main';
 $route['404_override']         = 'notify/error_404';
 $route['translate_uri_dashes'] = true;
 
-// Api routes
-$route['api']                   = 'api';
 
 // Shop routes
 $route['shop']                   = 'main';
@@ -43,6 +41,9 @@ $route['forgot_password']        = 'main/forgot_password';
 $route['activate/(:any)/(:any)'] = 'main/activate/$1/$2';
 $route['reset_password/(:any)']  = 'main/reset_password/$1';
 
+// Api routes
+$route['api/product/']            = 'api/product';
+
 // Admin area routes
 $route['admin']                      = 'admin/welcome';
 $route['admin/users']                = 'admin/auth/users';
@@ -59,3 +60,5 @@ $route['admin/products/(:num)']  = 'admin/products/index/$1';
 $route['admin/purchases/(:num)'] = 'admin/purchases/index/$1';
 $route['admin/quotes/(:num)']    = 'admin/quotes/index/$1';
 $route['admin/returns/(:num)']   = 'admin/returns/index/$1';
+
+
