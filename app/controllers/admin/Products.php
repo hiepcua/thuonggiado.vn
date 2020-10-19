@@ -1596,6 +1596,7 @@ class Products extends MY_Controller
 
     public function import_csv()
     {
+        var_dump("expression");die();
         $this->sma->checkPermissions('csv');
         $this->load->helper('security');
         $this->form_validation->set_rules('userfile', lang('upload_file'), 'xss_clean');
